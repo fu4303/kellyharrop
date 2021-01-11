@@ -1,0 +1,39 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@mdx-js/loader": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "@tailwindcss/typography": "^0.3.1",
+    "@types/webpack-env": "^1.16.0",
+    "autoprefixer": "^10.1.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^8.0.0",
+    "next": "^10.0.0",
+    "next-compose-plugins": "^2.2.1",
+    "next-mdx-enhanced": "^5.0.0",
+    "next-plugin-svgr": "^1.0.0",
+    "next-themes": "^0.0.10",
+    "postcss": "^8.2.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-transition-group": "^4.4.1",
+    "rehype-autolink-headings": "^5.0.1",
+    "rehype-slug": "^4.0.1",
+    "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "@next/mdx": "^10.0.5",
+    "@types/node": "^13.11.0",
+    "@types/react": "^16.9.32",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "2.2.1",
+    "typescript": "^3.8.3"
+  }
+}
