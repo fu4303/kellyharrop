@@ -12,7 +12,12 @@ const withMDX = require('@next/mdx')({
   }
 })
 
+const nextConfig = {
+  distDir: 'build'
+}
+
 module.exports = withPlugins([
+  nextConfig,
   withMDX({
     pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx']
   }),
