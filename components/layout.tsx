@@ -37,6 +37,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <title>{pageTitle}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content={description} />
+
         {/* Twitter */}
         <meta
           property="twitter:card"
@@ -52,6 +53,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         {/* Open Graph */}
         <meta property="og:type" content="website"></meta>
         <meta property="og:image" content={previewImage} key="ogimage" />
+        <meta content="1200" property="og:image:width" />
+        <meta content="628" property="og:image:height" />
         <meta property="og:site_name" content={siteName} key="ogsitename" />
         <meta property="og:title" content={pageTitle} key="ogtitle" />
         <meta property="og:description" content={description} key="ogdesc" />
