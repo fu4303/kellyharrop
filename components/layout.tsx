@@ -76,10 +76,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </li>
               <li
                 className={
-                  router.pathname == '/working-style' ? styles.active : ''
+                  router.pathname == '/blog/working-style' ? styles.active : ''
                 }
               >
-                <Link href="/working-style">
+                <Link href="/blog/working-style">
                   <a className="md:text-sm text-gray-800 opacity-80 dark:text-white hover:no-underline hover:opacity-100 transition duration-100">
                     <span className="pb-1">Working Style</span>
                   </a>
