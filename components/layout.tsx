@@ -11,6 +11,7 @@ import styles from '../styles/layout.module.css'
 import { TransitionGroup } from 'react-transition-group'
 
 export const siteTitle = 'Kelly Harrop, UX Engineer'
+export const siteDescription = 'The personal site and blog of Kelly Harrop'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const router = useRouter()
@@ -31,8 +32,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <link rel="icon" href="/favicon.ico" />
         <title>{siteTitle}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content={siteTitle} />
-        <meta name="og:title" content={siteTitle} />
+        <meta name="title" content={siteTitle} />
+        <meta name="twitter:title" content={siteTitle} />
+        <meta name="description" content={siteDescription} />
+        <meta name="og:description" content={siteDescription} />
+        <meta name="twitter:description" content={siteDescription} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header

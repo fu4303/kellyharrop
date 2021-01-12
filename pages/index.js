@@ -8,7 +8,7 @@ export default function IndexPage() {
     <>
       <Banner viewBox="0 0 965 294" className={`banner ${styles.banner}`} />
 
-      <section id="intro" className="section-header mb-20">
+      <section id="intro" className="section-header mb-10">
         <h1 className="text-5xl mb-8 leading-snug sm:text-4xl sm:leading-normal">
           Buttons. Badges. <br /> Battlestar Galactica.
         </h1>
