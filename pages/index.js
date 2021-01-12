@@ -46,11 +46,6 @@ export default function IndexPage() {
               experiments and learn from them. You can consider this site a
               constant work in progress.
             </p>
-            <p>
-              I'm currently playing around with{' '}
-              <a href="https://nextjs.org/">NextJS</a> and using{' '}
-              <a href="http://netlify.com">Netlify</a> to deploy.
-            </p>
           </dd>
 
           <dt>
