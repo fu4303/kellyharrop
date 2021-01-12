@@ -2,7 +2,7 @@
   align-items: center;
   display: flex;
   min-height: 60px;
-  @apply md:fixed md:top-0 md:w-full md:bg-light-100;
+  @apply md:fixed md:top-0 md:w-full md:bg-light-100 z-50;
 }
 
 .header > div {
