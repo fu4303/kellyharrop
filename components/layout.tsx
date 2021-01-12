@@ -14,7 +14,7 @@ export const pageTitle = 'Kelly Harrop, UX Engineer'
 export const description = 'The personal site and blog of Kelly Harrop'
 export const siteName = 'Kelly Harrop, UX Engineer'
 export const previewImage =
-  'https://user-images.githubusercontent.com/24794756/104327207-2237ed80-54b0-11eb-8025-98a1130cbd1b.png'
+  'https://user-images.githubusercontent.com/24794756/104333414-d2105980-54b6-11eb-8f15-dffb2b3db93f.png'
 export const twitterHandle = '@kellycodeschaos'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -38,10 +38,19 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content={description} />
         {/* Twitter */}
-        <meta name="twitter:card" content="summary" key="twcard" />
-        <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
+        <meta
+          property="twitter:card"
+          content="summary_large_image"
+          key="twcard"
+        />
+        <meta
+          property="twitter:creator"
+          content={twitterHandle}
+          key="twhandle"
+        />
 
         {/* Open Graph */}
+        <meta property="og:type" content="website"></meta>
         <meta property="og:image" content={previewImage} key="ogimage" />
         <meta property="og:site_name" content={siteName} key="ogsitename" />
         <meta property="og:title" content={pageTitle} key="ogtitle" />
