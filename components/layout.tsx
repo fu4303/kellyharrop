@@ -29,9 +29,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Kelly Harrop, UX Engineer" />
         <title>{siteTitle}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content={siteTitle} />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
