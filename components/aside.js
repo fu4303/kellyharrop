@@ -35,7 +35,7 @@ export default function Aside() {
           </a>
         </li>
       </ul>
-      <dl className="w-48 text-sm text-gray-600 dark:text-gray-500">
+      <dl className="w-48 text-sm text-gray-600">
         <dt>
           <h4>Currently</h4>
         </dt>

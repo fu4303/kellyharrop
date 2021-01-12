@@ -69,7 +69,7 @@ export default function IndexPage() {
           <dd>
             <p>
               Whoops, thanks for catching that. Feel free to{' '}
-              <a href="https://github.com/kharrop/kharrop/issues/new">
+              <a href="https://github.com/kharrop/website/issues/new">
                 create an issue
               </a>
               .

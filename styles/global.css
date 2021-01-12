@@ -191,7 +191,7 @@ h2:hover .icon-link:before,
 h3:hover .icon-link:before {
   content: '#';
   @apply text-gray-400 dark:text-gray-700;
-  margin-left: -32px;
+  margin-left: -30px;
   padding-right: 16px;
   position: absolute;
   opacity: 0.5;
