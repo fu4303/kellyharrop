@@ -36,7 +36,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header
-        className={`${styles.header} border-b border-gray-200 dark:border-gray-800`}
+        className={`${styles.header} border-b border-gray-200 dark:border-gray-800 md:dark:bg-dark-100`}
       >
         <div className="content-wrapper">
           <nav className={styles.nav}>
@@ -44,7 +44,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <li>
                 <Link href="/">
                   <a
-                    className={`${styles.logo} text-xl font-semibold text-gray-800 dark:text-white hover:no-underline`}
+                    className={`${styles.logo} md:text-base text-xl font-semibold text-gray-800 dark:text-white hover:no-underline`}
                   >
                     Kelly Harrop
                   </a>
@@ -56,14 +56,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 }
               >
                 <Link href="/working-style">
-                  <a className="text-gray-800 opacity-80 dark:text-white hover:no-underline hover:opacity-100 transition duration-100">
+                  <a className="md:text-sm text-gray-800 opacity-80 dark:text-white hover:no-underline hover:opacity-100 transition duration-100">
                     <span className="pb-1">Working Style</span>
                   </a>
                 </Link>
               </li>
               <li className={router.pathname == '/blog' ? styles.active : ''}>
                 <Link href="/blog">
-                  <a className="text-gray-800 opacity-80 dark:text-white hover:no-underline hover:opacity-100 transition duration-100">
+                  <a className="md:text-sm text-gray-800 opacity-80 dark:text-white hover:no-underline hover:opacity-100 transition duration-100">
                     <span className="pb-1">Blog</span>
                   </a>
                 </Link>
@@ -98,7 +98,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </header>
-      <div className="layout mt-28 content-wrapper grid gap-x-28 grid-flow-col lg:grid-flow-row">
+      <div className="layout mt-28 content-wrapper grid gap-x-28 grid-flow-col lg:grid-flow-row md:pt-10">
         <main>{children}</main>
         <aside className="w-40 lg:w-full">
           <Aside />
