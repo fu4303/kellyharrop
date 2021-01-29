@@ -7,7 +7,7 @@ const withMDX = require('@next/mdx')({
     rehypePlugins: [
       require('rehype-slug'),
       require('rehype-autolink-headings'),
-      { behavior: 'wrap' }
+      { behavior: 'append' }
     ]
   }
 })

@@ -112,10 +112,11 @@ p {
 }
 
 code {
-  @apply bg-gray-200 dark:bg-gray-700;
+  @apply bg-gray-300 dark:bg-gray-700 dark:text-white;
   border-radius: 3px;
   font-family: courier, monospace;
   padding: 0 3px;
+  font-weight: 500 !important;
 }
 
 dd {
@@ -190,7 +191,7 @@ dd {
 h2:hover .icon-link:before,
 h3:hover .icon-link:before {
   content: '#';
-  @apply text-gray-400 dark:text-gray-700;
+  @apply text-gray-400 dark:text-gray-600 sm:hidden;
   margin-left: -30px;
   padding-right: 16px;
   position: absolute;
