@@ -34,7 +34,7 @@ export default function IndexPage() {
           <PostPreview key={post.link} post={post} />
         ))}
       </section>
-      <section id="faq" className="mb-20">
+      <section id="faq" className="mb-20 prose dark:prose-dark">
         <h2>Frequently asked questions</h2>
         <dl>
           <dt>
@@ -77,7 +77,7 @@ export default function IndexPage() {
           </dd>
         </dl>
       </section>
-      <section id="todo" className="mb-20">
+      <section id="todo" className="mb-20 prose dark:prose-dark">
         <h2>Coming soon ™️...</h2>
         <p>
           Since this site was thrown together at the last minute, here are some

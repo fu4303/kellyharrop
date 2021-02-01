@@ -1,0 +1,33 @@
+import BlogPost from '../../../components/blogPost'
+
+export const meta = {
+  title: 'Making progress (and activity)',
+  description: 'What goes into refactoring a loader component',
+  published: '2021-01-29',
+  date: 'January 29, 2021',
+  readTime: 5
+}
+
+export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>
+
+Recently, our team finished up a major overhaul of various loading-based components within our design system. What started out as a simple task to implement design tokens, became a huge endeavor that helped our teams align on durable attributes. More importantly, it was a project that enabled design to become more in sync with development and vice versa.
+
+<figure>
+
+![A person's bright orange shoes climbing up blue steps](https://images.unsplash.com/photo-1448387473223-5c37445527e7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
+
+<figcaption>Steps towards progress</figcaption>
+
+</figure>
+
+This project touched on multiple aspects, including:
+
+- Updating design libraries, specs, terminlogy and documentation for all products and platforms
+- A new code approach to manage the updated specs and strategy around deprecating old versions
+- Converting old styling to use newly generated design tokens
+- Updated demos & configurable options
+- Updated tests & implementation instructions
+- Creating a comms strategy to inform the community of the changes
+- A new process for design and code review
+
+PHEW.

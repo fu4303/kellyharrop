@@ -24,14 +24,13 @@
   function addDarkMode() {
     if (checkDarkMode()) {
       document.documentElement.classList.add('mode-dark')
-      document.documentElement.classList.add('bg-gray-1000')
     } else {
       document.documentElement.classList.remove('mode-dark')
-      document.documentElement.classList.remove('bg-gray-1000')
     }
   }
 
   addDarkMode()
+  addCss()
 
   const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
 

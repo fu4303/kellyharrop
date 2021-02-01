@@ -6,7 +6,7 @@ import { siteName } from '../components/layout'
 
 const pageName = 'Blog'
 
-export default function IndexPage() {
+export default function Blog() {
   return (
     <>
       <Head>
@@ -14,15 +14,16 @@ export default function IndexPage() {
           {pageName} | {siteName}
         </title>
 
-        {/* Open Graph */}
         <meta property="og:title" content={pageName} key="ogtitle" />
       </Head>
       <h1>Blog</h1>
-      <p>Two articles each month starting January 2021. Allegedly.</p>
+      <p className="text-xl font-light">
+        Two articles each month starting January 2021. Allegedly.
+      </p>
       <section id="blog-list" className="mt-12">
         <ul>
-          {posts.map(post => (
-            <li className="mb-16">
+          {posts.map((post, i) => (
+            <li className="mb-16" key={i}>
               <PostPreview key={post.link} post={post} />
             </li>
           ))}

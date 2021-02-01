@@ -74,17 +74,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   </a>
                 </Link>
               </li>
-              <li
-                className={
-                  router.pathname == '/blog/working-style' ? styles.active : ''
-                }
-              >
-                <Link href="/blog/working-style">
-                  <a className="md:text-sm text-gray-800 opacity-80 dark:text-white hover:no-underline hover:opacity-100 transition duration-100">
-                    <span className="pb-1">Working Style</span>
-                  </a>
-                </Link>
-              </li>
+
               <li className={router.pathname == '/blog' ? styles.active : ''}>
                 <Link href="/blog">
                   <a className="md:text-sm text-gray-800 opacity-80 dark:text-white hover:no-underline hover:opacity-100 transition duration-100">
@@ -122,7 +112,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </header>
-      <div className="layout mt-28 content-wrapper grid gap-x-28 grid-flow-col lg:grid-flow-row md:pt-10">
+      <div className="layout mt-28 content-wrapper grid gap-x-28 grid-flow-col lg:grid-flow-row">
         <main>{children}</main>
         <aside className="w-40 lg:w-full">
           <Aside />
