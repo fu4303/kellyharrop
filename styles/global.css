@@ -43,7 +43,6 @@ a:hover {
 
 main {
   width: 100%;
-  max-width: 760px;
 }
 @media (max-width: 563px) {
   .content-wrapper {
@@ -224,4 +223,66 @@ h3 .icon-link:hover:before {
 
 figure img {
   @apply mb-0 !important;
+}
+
+article.prose {
+  position: relative;
+}
+
+.article-wrapper {
+  max-width: 650px;
+}
+
+.toc {
+  position: absolute;
+  height: 100%;
+  right: -300px;
+  max-width: 200px;
+  top: -160px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.prose .toc ol {
+  position: sticky;
+  top: 60px;
+  margin-top: 0;
+}
+
+.prose .toc ol > li {
+  padding-left: 0;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.prose .toc ol > li:before {
+  content: none;
+}
+
+.prose .toc a {
+  @apply font-normal text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.visually-hidden {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+@media screen and (max-width: 960px) {
+  .toc {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  article.prose {
+    overflow: hidden;
+    max-width: none;
+  }
+
+  .article-wrapper {
+    max-width: none;
+  }
 }

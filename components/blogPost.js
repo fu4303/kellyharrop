@@ -5,7 +5,7 @@ import { siteName } from './layout'
 
 export const BlogPost = ({ children, meta }) => {
   return (
-    <>
+    <div className="article-wrapper">
       <Head>
         <title>
           {meta.title} | {siteName}
@@ -24,7 +24,7 @@ export const BlogPost = ({ children, meta }) => {
       <Link href="/blog">
         <a className="block mb-10">← All posts</a>
       </Link>
-    </>
+    </div>
   )
 }
 

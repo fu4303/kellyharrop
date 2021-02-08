@@ -1,4 +1,5 @@
 import BlogPost from '../../../components/blogPost'
+import { VisuallyHidden } from '../../../components/visuallyHidden'
 
 export const meta = {
   title: "It's okay to be wrong",
@@ -10,6 +11,12 @@ export const meta = {
 }
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>
+
+<VisuallyHidden>
+
+## Intro
+
+</VisuallyHidden>
 
 As kids, we're often punished for not knowing the right answers. Take a look at the SAT - if you answer a question incorrectly, you get more points off than simply not answering at all. Inaction is rewarded over a wrong action when trying to solve a problem.
 

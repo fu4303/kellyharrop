@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import DarkModeIcon from '../public/icons/dark.svg'
 import LightModeIcon from '../public/icons/light.svg'
-import Aside from './aside'
 import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -112,11 +111,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </header>
-      <div className="layout mt-28 content-wrapper grid gap-x-28 grid-flow-col lg:grid-flow-row">
+      <div className="layout mt-28 content-wrapper">
         <main>{children}</main>
-        <aside className="w-40 lg:w-full">
-          <Aside />
-        </aside>
       </div>
     </div>
   )

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import BlogPost from '../../components/blogPost'
+import { VisuallyHidden } from '../../components/visuallyHidden'
 
 export const meta = {
   title: "Kelly's Working Style",
@@ -10,6 +11,12 @@ export const meta = {
 }
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>
+
+<VisuallyHidden>
+
+## Intro
+
+</VisuallyHidden>
 
 Welcome to my personal (ever-evolving) guide for how I work. As I continue to improve my self awareness, I'll update this page to keep myself accountable and be as transparent as possible.
 

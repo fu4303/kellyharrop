@@ -8,7 +8,7 @@ const pageName = 'Blog'
 
 export default function Blog() {
   return (
-    <>
+    <div>
       <Head>
         <title>
           {pageName} | {siteName}
@@ -29,6 +29,6 @@ export default function Blog() {
           ))}
         </ul>
       </section>
-    </>
+    </div>
   )
 }

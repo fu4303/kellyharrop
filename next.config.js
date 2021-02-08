@@ -1,13 +1,15 @@
 const withPlugins = require('next-compose-plugins')
 const withSvgr = require('next-plugin-svgr')
 
+const toc = require('@jsdevtools/rehype-toc')
+
 const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
   options: {
     rehypePlugins: [
       require('rehype-slug'),
       require('rehype-autolink-headings'),
-      { behavior: 'append' }
+      [toc, { position: 'afterend', headings: ['h2'] }]
     ]
   }
 })
