@@ -62,6 +62,9 @@ module.exports = {
         },
         dark: {
           css: {
+            'ul > li:before': {
+              'background-color': theme('colors.gray.600')
+            },
             h2: {
               color: theme('colors.gray.200'),
               'font-weight': '300'
