@@ -18,6 +18,7 @@ export const BlogPost = ({ children, meta }) => {
           content={meta.description}
           key="ogdesc"
         />
+        <meta property="og:image" content={meta.previewImage} key="ogimage" />
       </Head>
       <PostHeader meta={meta} isBlogPost />
       <article className="prose dark:prose-dark mb-32">{children}</article>
