@@ -49,10 +49,6 @@ main {
   .content-wrapper {
     @apply px-4;
   }
-  header a,
-  nav li {
-    padding: 0 !important;
-  }
 }
 
 button:focus {
