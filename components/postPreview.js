@@ -16,7 +16,7 @@ export const PostPreview = ({ post }) => {
           </div>
 
           <div className="notes">
-            <span>{meta.date}</span> • <span>{meta.readTime} min read</span>{' '}
+            <span>{meta.date}</span> {meta.readingTime}
           </div>
         </div>
       </a>

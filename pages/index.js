@@ -3,6 +3,7 @@ import { posts } from '../utils/getAllPosts'
 import Banner from '../public/images/welcome-banner.svg'
 import styles from '../styles/index.module.css'
 import Aside from '../components/aside'
+import Image from 'next/image'
 
 export default function IndexPage() {
   return (
@@ -81,7 +82,14 @@ export default function IndexPage() {
           </dl>
         </section>
         <section id="todo" className="mb-20 prose dark:prose-dark">
-          <h2>Coming soon ™️...</h2>
+          <Image
+            src="/images/wireframe.png"
+            alt="Wireframe sketches in a notebook"
+            layout="responsive"
+            width="960"
+            height="300"
+          />
+          <h2>Coming soon...</h2>
           <p>
             Since this site was thrown together at the last minute, here are
             some things to look forward to:
@@ -91,7 +99,6 @@ export default function IndexPage() {
               <li>Improved responsive styles</li>
               <li>Cleaned up CSS (it's a mess!)</li>
               <li>Converting more components to TypeScript</li>
-              <li>Filled out side bar</li>
               <li>More content</li>
               <li>More automation</li>
               <li>More everything 😅</li>

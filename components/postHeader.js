@@ -1,8 +1,6 @@
 export const PostHeader = ({ meta, isBlogPost }) => (
   <>
-    <h1 className={isBlogPost ? 'great-title' : null}>{meta.title}</h1>
-    <div className="notes mb-16 dark:text-gray-400">
-      <span>{meta.date}</span> • <span>{meta.readTime} min read</span>
-    </div>
+    <div className="notes mb-2 dark:text-gray-400">{meta.date}</div>
+    <h1 className={isBlogPost ? 'mb-10' : null}>{meta.title}</h1>
   </>
 )

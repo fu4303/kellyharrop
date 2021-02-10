@@ -1,14 +1,20 @@
 import BlogPost from '../../../components/blogPost'
+import VisuallyHidden from '../../../components/visuallyHidden'
 
 export const meta = {
   title: 'Making progress (and activity)',
   description: 'What goes into refactoring a loader component',
   published: '2021-01-29',
-  date: 'January 29, 2021',
-  readTime: 5
+  date: 'January 29, 2021'
 }
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>
+
+<VisuallyHidden>
+
+## Intro
+
+</VisuallyHidden>
 
 Recently, our team finished up a major overhaul of various loading-based components within our design system. What started out as a simple task to implement design tokens, became a huge endeavor that helped our teams align on durable attributes. More importantly, it was a project that enabled design to become more in sync with development and vice versa.
 

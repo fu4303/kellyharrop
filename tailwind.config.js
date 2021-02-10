@@ -37,10 +37,23 @@ module.exports = {
       typography: theme => ({
         DEFAULT: {
           css: {
+            code: {
+              fontWeight: '500',
+              padding: '2px 6px'
+            },
+            'code::before': {
+              content: 'none'
+            },
+            'code::after': {
+              content: 'none'
+            },
             h2: {
-              'font-weight': '500',
+              'font-weight': '400',
               'padding-top': '20px',
               'margin-top': '1.4em'
+            },
+            h3: {
+              'font-weight': '400'
             },
             img: {
               'border-radius': '6px'
@@ -51,11 +64,11 @@ module.exports = {
           css: {
             h2: {
               color: theme('colors.gray.200'),
-              'font-weight': '400'
+              'font-weight': '300'
             },
             h3: {
               color: theme('colors.gray.200'),
-              'font-weight': '400'
+              'font-weight': '300'
             },
             color: theme('colors.gray.200'),
             'font-weight': '300',

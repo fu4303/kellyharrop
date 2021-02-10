@@ -1,7 +1,6 @@
 import { PostPreview } from '../components/postPreview'
 import { posts } from '../utils/getAllPosts'
 import Head from 'next/head'
-
 import { siteName } from '../components/layout'
 
 const pageName = 'Blog'
@@ -17,9 +16,10 @@ export default function Blog() {
         <meta property="og:title" content={pageName} key="ogtitle" />
       </Head>
       <h1>Blog</h1>
-      <p className="text-xl font-light">
+      <p className="text-xl font-light mb-20">
         Two articles each month starting January 2021. Allegedly.
       </p>
+
       <section id="blog-list" className="mt-12">
         <ul>
           {posts.map((post, i) => (

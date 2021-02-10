@@ -20,7 +20,7 @@ export const BlogPost = ({ children, meta }) => {
         />
       </Head>
       <PostHeader meta={meta} isBlogPost />
-      <article className="prose dark:prose-dark mb-20">{children}</article>
+      <article className="prose dark:prose-dark mb-32">{children}</article>
       <Link href="/blog">
         <a className="block mb-10">← All posts</a>
       </Link>

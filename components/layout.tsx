@@ -74,10 +74,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </Link>
               </li>
 
-              <li className={router.pathname == '/blog' ? styles.active : ''}>
+              <li className={router.pathname == '/blog' ? 'active' : ''}>
                 <Link href="/blog">
                   <a className="md:text-sm text-gray-800 opacity-80 dark:text-white hover:no-underline hover:opacity-100 transition duration-100">
-                    <span className="pb-1">Blog</span>
+                    Blog
                   </a>
                 </Link>
               </li>
@@ -97,13 +97,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                       theme === 'light' ? 'dark' : 'light'
                     } mode`}
                   >
-                    <TransitionGroup
-                      transitionName="theme"
-                      transitionEnterTimeout={300}
-                      transitionLeaveTimeout={300}
-                    >
-                      {theme === 'light' ? <LightModeIcon /> : <DarkModeIcon />}
-                    </TransitionGroup>
+                    {theme === 'light' ? <LightModeIcon /> : <DarkModeIcon />}
                   </button>
                 )}
               </li>

@@ -29,25 +29,16 @@
   margin-right: 16px;
 }
 
+.group li {
+  border-radius: 6px;
+}
+
 .group a {
   display: block;
-  padding: 12px;
+  padding: 4px 12px;
 }
 
 .group .logo {
   padding: 0;
   margin-right: 12px;
-}
-
-.group span {
-  border-bottom: 2px solid transparent;
-  transition: border 0.15s ease-in;
-}
-
-.active span {
-  border-bottom: 2px solid #80cbc4;
-}
-
-.active a {
-  opacity: 1;
 }

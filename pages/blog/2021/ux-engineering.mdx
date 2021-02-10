@@ -1,0 +1,193 @@
+import BlogPost from '../../../components/blogPost'
+import VisuallyHidden from '../../../components/visuallyHidden'
+import Image from 'next/image'
+
+export const meta = {
+  title: 'UX Engineering for design systems',
+  description: 'Bridging the gap between design and development',
+  published: '2021-02-10',
+  date: 'February 10, 2021'
+}
+
+export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>
+
+<VisuallyHidden>
+
+## Intro
+
+</VisuallyHidden>
+
+Because UX Engineering is a relatively new role and the responsibilities can widely shift depending on the company, it can get pretty tricky to explain to folks what we actually do for a living.
+
+Hopefully this article will get you interested in hiring one for your team, or start applying as one!
+
+![Geometric shape patterns in a grid](/images/pattern.png)
+
+## What's a UX Engineer?
+
+Generally speaking, a UXE (UX Engineer) is someone who uses design thinking and principles to implement solutions with code.
+
+A UXE's skills can be considered a subset of frontend development in that they are focused more on the [front of frontend](https://bradfrost.com/blog/post/frontend-design-react-and-a-bridge-over-the-great-divide/) and focus on translating design into code as close as possible.
+
+While this role seems like a perfect fit for design systems, UXE's can flourish in any team that requires close collaboration between design and development.
+
+## Facilitating design alignment
+
+Our design team includes representation from each of our business units, to make sure each product as voice within the system.
+
+One of my main responsibilities is to ensure our customers have consistent experiences. This means that we need a shared, common understanding of how a component should look and function in any platform and product.
+
+![Someone holding a phone with a laptop in the background](https://images.unsplash.com/photo-1559526324-c1f275fbfa32?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
+
+To help designers on our team understand which experience are disparate amongst our products, we needed to establish (and commit to) explicit attributes within our design specs:
+
+- `Anatomy` : How we reference each element
+- `States` : What happens during a user interaction
+- `Variants` : Alternative forms of the component
+- `Configurations` : Supported options that end-users can choose from
+- `Standard/Defaults` : What comes out of the box
+
+Creating a template in Figma with corresponding visuals has been a great way to get buy-in for alignment.
+
+## Establishing constraints
+
+When designing a component, it can be easy (and fun) to hand-pick certain values. It's also easy to accidentally pick a wrong value from the system when building out a new component.
+
+This is how we end up with scenarios where `placeholder` typography in a `textarea` could differ than what was established previously for a standard `input`, when really design had intended them to share the same attributes.
+
+![A text input with placeholder text](/images/placeholder-input.png)
+
+![A textarea with placeholder text that's styled differently](/images/placeholder-textarea.png)
+
+UX Engineers typically work with designers to explain the impact of design decisions (or confirm this wasn't a mistake in the spec) so that situations like this don't happen.
+
+It also means we sometimes need to act as negotiators in order to strengthen the logic within our system.
+
+## Architecting scalable blueprints
+
+Because UXE's are responsible for making sure a component accurately reflects design specifications, it's crucial that a component's coded blueprint supports the same logic, plus future considerations.
+
+> How would someone want to implement this component?
+
+Strong architecture ensures less code repetition, helps with open-source contribution, and provides a foundation that helps guide scalability discussions.
+
+![An architect sketching a blueprint](https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80)
+
+Blueprint decisions include:
+
+- Defining the relationship between components
+- Defining the relationship between parent and child components
+- Determining if a variant is a separate component or [defined through a prop](https://reactjs.org/docs/components-and-props.html)
+- Establishing what configurable aspects get exposed to an end user
+- Creating and implementing [design tokens](https://uxdesign.cc/design-tokens-for-dummies-8acebf010d71)
+
+The more time and care that can be invested at this stage, the less likely the team will need to implement a breaking change in the future.
+
+## Optimizing performance
+
+While this article has emphasized making sure the component looks and behaves as expected, we also need to look at the bigger picture with how our decisions impact the rest of the design system ecosystem.
+
+An optimized component includes evaluating:
+
+- Bundle size
+- Treeshaking
+- CSS over SVG
+- Asynchronous loading
+- Strong types
+
+You can have the most customizable component on the planet, but if it takes ages to load, no one will use it.
+
+## Promoting and enforcing accessibility
+
+By the time a component is ready to be coded, the design should adhere to minimum accessibility requirements including:
+
+- Typography
+- Line length
+- Contrast ratios
+- Minimum tappable area
+
+Beyond this, a UXE needs to consider other interactions that may not have been uncovered during the design-focused part of the team's workflow.
+
+![A pair of glasses looking at an out of focus neighborhood](https://images.unsplash.com/photo-1516714819001-8ee7a13b71d7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80)
+
+Typically, my accessibility checklist includes:
+
+- High contrast mode
+- Reduced motion styling
+- Alt text/aria props
+- Keyboard navigation
+- Dark mode support
+
+Incorporating these aspects into the component is only one part of how we help ensure accessible experiences. We also need to help end-users (product developers) understand what they need to consider during implementation.
+
+I find it helpful to bake in as much accessibility logic possible to mitigate risk that user will forget to incorporate it. For example, if a user doesn't supply a value for a `label`, you can make it a requirement that a user must provide an `aria-label` value instead.
+
+This not only helps ensure the experience is accessible, but also educates users on best practices.
+
+## Writing tests
+
+Writing tests ensures that the logic behind the component is reflected accurately in visual snapshots.
+
+Typically, you want to test against:
+
+- Whether elements did or didn't render
+- If certain classes were applied
+- The render matches values from the design specs
+
+At Intuit, we open-sourced [proof](https://github.com/intuit/proof), a test runner for Storybook!
+
+## Providing demos & documentation
+
+After all the alignment conversations, architectural back-and-forths, and code iterations... we finally have something to show for it! 🎉
+
+Providing a curated set of configurable examples and implementation documentation is the most visible part of a UXE's contribution to the project.
+
+![Storybook logo](/images/storybook.png)
+
+### Iterative reviews
+
+I believe in sharing early, and sharing often.
+
+While working on a component, each pushed commit generates a new [Storybook](https://storybook.js.org/) link that anyone can review and comment on within GitHub. The benefit of this is that feedback doesn't get lost in Slack, and we can keep track of change requests.
+
+To standardize how teams provide component demos, we include Storybook as part of our [Design Systems CLI](https://github.com/intuit/design-systems-cli).
+
+## Advocating for the community
+
+As part of the design systems team, the UXE is also responsible for being an advocate for both product designers and developers.
+
+This includes:
+
+- Helping users onboard to the system
+- Answering questions
+- Making sure their voice is heard during sprint planning
+- Addressing feedback
+- Guiding users to the right team members
+
+![Calendly logo](https://calendly.com/calendly-logo.png)
+
+It's easy to get overwhelmed by this run-the-business type of work. Conducting [office hours](https://uxdesign.cc/the-power-of-office-hours-aac0db337d32) using [Calendly](https://calendly.com) is a great way to make sure you can stay connected to the community and guard your time (and sanity).
+
+## What success looks like
+
+Because we have to switch gears so often and interact with so many people, it can be challenging for folks to get a full sense of the work involved.
+
+A successful UXE is someone who:
+
+- Goes with the flow and doesn't mind throwing away code to make something better
+- Feels comfortable explaining technical constraints and requirements to non-technical audiences
+- Tends to push back on one-off, unscalable designs
+- Puts ego aside and listens to the community
+- Collaborates well with designers, developers, and PM
+
+For projects I lead, I include all disciplines in a JIRA board and include everyone to our sprint retro/planning sessions to ensure everyone is aware of what tasks need to be completed until we're ready to ship.
+
+![Passion led us here](/images/passion.png)
+
+## Wrapping up
+
+Even though UX Engineering is still in its infancy, the need for this type of role has been around for ages.
+
+I'm excited to see more of these opportunities pop up, and super happy I was able to make the role what it is for our design system.
+
+For additional reading, I definitely recommend checking out Emma Bostian's [article on UX Engineering](https://dev.to/emmawedekind/ux-engineering-3hem).

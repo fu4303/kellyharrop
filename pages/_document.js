@@ -21,7 +21,6 @@ class MyDocument extends Document {
           />
         </Head>
         <body className="font-sans bg-light-100 text-gray-900 dark:bg-dark-100 dark:text-gray-200">
-          <script src="../utils/attach-dark-mode.js" />
           <Main />
           <NextScript />
         </body>
