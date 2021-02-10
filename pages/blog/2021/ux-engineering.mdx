@@ -150,11 +150,23 @@ Providing a curated set of configurable examples and implementation documentatio
 
 ![Storybook logo](/images/storybook.png)
 
+In order to help our users navigate our [Storybook](https://storybook.js.org/), we created a common story structure so that users could quickly find what they needed.
+
+![Storybook sidebar](https://user-images.githubusercontent.com/24794756/107555379-b8892d00-6b9c-11eb-8414-ca7c90a934f4.png)
+
+- `Playground` : The standard configuration of a component, with full knob control
+- `Showcase` : A bird's eye view of supported variants
+- `Features` : Shortcuts to common knob configurations
+
+At Intuit, we encourage teams to experiment and share feedback with what does and doesn't work. With user-backed data, we then work to graduate these offerings into the design system for everyone to use.
+
+More details: [How Intuit leverages Storybook and its plugins](https://medium.com/intuit-engineering/how-intuit-uses-storybook-plugins-d41c1eb6d806)
+
 ### Iterative reviews
 
 I believe in sharing early, and sharing often.
 
-While working on a component, each pushed commit generates a new [Storybook](https://storybook.js.org/) link that anyone can review and comment on within GitHub. The benefit of this is that feedback doesn't get lost in Slack, and we can keep track of change requests.
+While working on a component, each pushed commit generates a new Storybook link that anyone can review and comment on within GitHub. The benefit of this is that feedback doesn't get lost in Slack, and we can keep track of change requests.
 
 To standardize how teams provide component demos, we include Storybook as part of our [Design Systems CLI](https://github.com/intuit/design-systems-cli).
 
