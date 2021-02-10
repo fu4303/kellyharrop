@@ -56,8 +56,9 @@ export default function IndexPage() {
             </dt>
             <dd>
               <p>
-                A UX Engineer is someone who bridges the gap between design and
-                development, most commonly seen working on design systems teams.
+                A UX Engineer is someone who specializes in bringing designs to
+                life through code, most commonly seen working within design
+                systems teams.
               </p>
               <p>
                 <a href="https://kellyharrop.com/blog/2021/ux-engineering">
