@@ -247,7 +247,7 @@ figure img {
 
 .prose .toc ol > li {
   padding-left: 0;
-  line-height: 1.2;
+  line-height: 1.4;
   margin-bottom: 0.75rem;
 }
 
@@ -259,6 +259,7 @@ figure img {
   @apply font-normal text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300;
   text-decoration: none;
   font-size: 14px;
+  display: block;
 }
 
 .visually-hidden {
