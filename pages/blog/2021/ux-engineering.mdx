@@ -17,15 +17,13 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>
 
 </VisuallyHidden>
 
-Because UX Engineering is a relatively new role and the responsibilities can widely shift depending on the company, it can get pretty tricky to explain to folks what we actually do for a living.
-
-Hopefully this article will get you interested in hiring one for your team, or start applying as one!
+Because UX Engineering is a relatively new role and the responsibilities can widely shift depending on the company, it can be challenging to explain to folks what we actually do for a living.
 
 ![Geometric shape patterns in a grid](/images/pattern.png)
 
 ## What's a UX Engineer?
 
-Generally speaking, a UXE (UX Engineer) is someone who uses design thinking and principles to implement solutions with code.
+Generally speaking, a UXE (User Experience Engineer) is someone who uses design thinking and user behaviorial data to implement solutions with code.
 
 A UXE's skills can be considered a subset of frontend development in that they are focused more on the [front of frontend](https://bradfrost.com/blog/post/frontend-design-react-and-a-bridge-over-the-great-divide/) and focus on translating design into code as close as possible.
 
@@ -33,13 +31,13 @@ While this role seems like a perfect fit for design systems, UXE's can flourish 
 
 ## Facilitating design alignment
 
-Our design team includes representation from each of our business units, to make sure each product as voice within the system.
+Our design team includes representation from each of our business units, to make sure each product has voice within the system.
 
 One of my main responsibilities is to ensure our customers have consistent experiences. This means that we need a shared, common understanding of how a component should look and function in any platform and product.
 
 ![Someone holding a phone with a laptop in the background](https://images.unsplash.com/photo-1559526324-c1f275fbfa32?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
 
-To help designers on our team understand which experience are disparate amongst our products, we needed to establish (and commit to) explicit attributes within our design specs:
+To help designers on our team understand which experiences are disparate amongst our products, we needed to establish (and commit to) explicit attributes within our design specs:
 
 - `Anatomy` : How we reference each element
 - `States` : What happens during a user interaction
@@ -47,7 +45,9 @@ To help designers on our team understand which experience are disparate amongst 
 - `Configurations` : Supported options that end-users can choose from
 - `Standard/Defaults` : What comes out of the box
 
-Creating a template in Figma with corresponding visuals has been a great way to get buy-in for alignment.
+Creating a template in Figma with corresponding visuals for each business unit has been a great way to get buy-in for alignment.
+
+As a UXE, it is also my responsibility to help designers understand how previous implementation may not have matched the original spec, and to create a plan to get us to our desired outcome.
 
 ## Establishing constraints
 
@@ -61,13 +61,13 @@ This is how we end up with scenarios where `placeholder` typography in a `textar
 
 UX Engineers typically work with designers to explain the impact of design decisions (or confirm this wasn't a mistake in the spec) so that situations like this don't happen.
 
-It also means we sometimes need to act as negotiators in order to strengthen the logic within our system.
+It also means we sometimes need to act as negotiators in order to strengthen durable logic within our system.
 
 ## Architecting scalable blueprints
 
-Because UXE's are responsible for making sure a component accurately reflects design specifications, it's crucial that a component's coded blueprint supports the same logic, plus future considerations.
+Because UXE's are responsible for making sure a component accurately reflects design specifications, it's crucial that a component supports the same logic, plus future considerations.
 
-> How would someone want to implement this component?
+Anticipating how a designer would want to modify a component is critical.
 
 Strong architecture ensures less code repetition, helps with open-source contribution, and provides a foundation that helps guide scalability discussions.
 
@@ -80,6 +80,10 @@ Blueprint decisions include:
 - Determining if a variant is a separate component or [defined through a prop](https://reactjs.org/docs/components-and-props.html)
 - Establishing what configurable aspects get exposed to an end user
 - Creating and implementing [design tokens](https://uxdesign.cc/design-tokens-for-dummies-8acebf010d71)
+
+UXE's should constantly be asking:
+
+> How would someone want to implement this component?
 
 The more time and care that can be invested at this stage, the less likely the team will need to implement a breaking change in the future.
 
@@ -177,8 +181,8 @@ A successful UXE is someone who:
 - Goes with the flow and doesn't mind throwing away code to make something better
 - Feels comfortable explaining technical constraints and requirements to non-technical audiences
 - Tends to push back on one-off, unscalable designs
-- Puts ego aside and listens to the community
-- Collaborates well with designers, developers, and PM
+- Puts ego aside to listen to the community AND willing to collaborate on solutions
+- Has intuition on how to add extra polish to an experience
 
 I've found what's worked best is to include all disciplines in a JIRA board so that everyone is aware of what tasks need to be completed until we're ready to ship.
 
@@ -191,3 +195,5 @@ Even though UX Engineering is still in its infancy, the need for this type of ro
 I'm excited to see more of these opportunities pop up, and super happy I was able to make the role what it is for our team.
 
 For additional reading, I definitely recommend checking out Emma Bostian's [article on UX Engineering](https://dev.to/emmawedekind/ux-engineering-3hem).
+
+Hopefully you're now interested in hiring a UXE for your team, or you'll start applying as one!
