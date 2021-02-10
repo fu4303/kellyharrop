@@ -20,7 +20,7 @@ class MyDocument extends Document {
             media="(prefers-color-scheme: dark)"
           />
         </Head>
-        <body className="font-sans bg-light-100 text-gray-900 dark:bg-dark-100 dark:text-gray-200">
+        <body>
           <Main />
           <NextScript />
         </body>
