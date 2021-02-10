@@ -7,7 +7,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import styles from '../styles/layout.module.css'
-import { TransitionGroup } from 'react-transition-group'
 
 export const pageTitle = 'Kelly Harrop, UX Engineer'
 export const description = 'The personal site and blog of Kelly Harrop'
