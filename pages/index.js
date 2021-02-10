@@ -56,14 +56,14 @@ export default function IndexPage() {
             </dt>
             <dd>
               <p>
-                I'll probably make a blog post about this one day... In the
-                meantime,{' '}
-                <a href="https://twitter.com/EmmaBostian">Emma Bostian</a> wrote
-                a{' '}
-                <a href="https://dev.to/emmawedekind/ux-engineering-3hem">
-                  really great article
+                A UX Engineer is someone who bridges the gap between design and
+                development, most commonly seen working on design systems teams.
+              </p>
+              <p>
+                <a href="https://kellyharrop.com/blog/2021/ux-engineering">
+                  Check out my blog post
                 </a>{' '}
-                that I highly recommend checking out.
+                for more details.
               </p>
             </dd>
 
