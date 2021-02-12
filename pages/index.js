@@ -4,6 +4,7 @@ import Banner from '../public/images/welcome-banner.svg'
 import styles from '../styles/index.module.css'
 import Aside from '../components/aside'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function IndexPage() {
   return (
@@ -30,11 +31,18 @@ export default function IndexPage() {
           </div>
         </section>
         <section className="mb-20 featured-post">
-          <h4 className="mb-4">
-            <span className="text-lg spacer">✨</span>Fresh post
-          </h4>
+          <div className="flex items-baseline justify-between">
+            <h4 className="mb-4 mr-4 inline-block">
+              <span className="text-lg spacer">✨</span>Fresh post
+            </h4>
+            <Link href="/blog">
+              <a className="text-sm">All posts</a>
+            </Link>
+          </div>
           {posts.slice(0, 1).map(post => (
-            <PostPreview key={post.link} post={post} />
+            <div className="post">
+              <PostPreview key={post.link} post={post} />
+            </div>
           ))}
         </section>
         <section id="faq" className="mb-20 prose dark:prose-dark">

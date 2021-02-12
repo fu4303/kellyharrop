@@ -20,7 +20,7 @@ export default function Blog() {
         Two articles each month starting January 2021. Allegedly.
       </p>
 
-      <section id="blog-list" className="mt-12">
+      <section id="blog-list" className="mt-12 mb-32">
         <ul>
           {posts.map((post, i) => (
             <li className="mb-16" key={i}>

@@ -148,13 +148,13 @@ dd {
   @apply text-gray-500 dark:text-gray-400 text-sm;
 }
 
-.featured-post a {
+.featured-post .post {
   @apply bg-white rounded-tl-xl rounded-br-xl dark:bg-gray-800;
   transition: box-shadow 0.2s ease-in;
   @apply p-6;
 }
 
-.featured-post a:hover {
+.featured-post .post:hover {
   @apply shadow-lg;
 }
 .post-preview:hover h2 {
