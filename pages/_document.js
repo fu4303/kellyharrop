@@ -9,12 +9,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>
-          <link
-            rel="stylesheet"
-            href="https://www.unpkg.com/prism-themes@1.5.0/themes/prism-coldark-dark.css"
-          />
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />
