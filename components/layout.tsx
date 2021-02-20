@@ -22,6 +22,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     setIsMounted(true)
   }, [])
+
+  if (!isMounted) return null
+
   const switchTheme = () => {
     if (isMounted) {
       setTheme(theme === 'light' ? 'dark' : 'light')

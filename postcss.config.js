@@ -2,6 +2,7 @@ module.exports = {
   plugins: [
     'tailwindcss',
     'postcss-focus-visible',
+    'postcss-nested',
     [
       'postcss-preset-env',
       {
