@@ -7,6 +7,8 @@ const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
   options: {
     rehypePlugins: [
+      require('@mapbox/rehype-prism'),
+
       require('rehype-slug'),
       require('rehype-autolink-headings'),
       [toc, { position: 'afterend', headings: ['h2'] }]
