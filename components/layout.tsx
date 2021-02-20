@@ -34,6 +34,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <title>{pageTitle}</title>
+        <meta
+          name="google-site-verification"
+          content="SH5ZDS0JNYurCYH9qc_MT5wanYEODDsXHe29uDOaZ60"
+        />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content={description} />
 
