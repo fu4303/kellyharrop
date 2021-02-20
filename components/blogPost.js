@@ -2,6 +2,7 @@ import { PostHeader } from './postHeader'
 import Head from 'next/head'
 import Link from 'next/link'
 import { siteName } from './layout'
+import 'prism-themes/themes/prism-coldark-dark.css'
 
 export const BlogPost = ({ children, meta }) => {
   return (
