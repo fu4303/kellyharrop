@@ -5,7 +5,7 @@ export default function Aside() {
         <li>
           <a
             href="https://twitter.com/kellycodeschaos"
-            className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+            className="text-gray-600 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
           >
             Twitter.
           </a>
@@ -13,7 +13,7 @@ export default function Aside() {
         <li>
           <a
             href="https://codepen.io/kharrop"
-            className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+            className="text-gray-600 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
           >
             CodePen.
           </a>
@@ -21,7 +21,7 @@ export default function Aside() {
         <li>
           <a
             href="https://dribbble.com/kellyharrop"
-            className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+            className="text-gray-600 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
           >
             Dribbble.
           </a>
@@ -29,7 +29,7 @@ export default function Aside() {
         <li>
           <a
             href="https://github.com/kharrop"
-            className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+            className="text-gray-600 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
           >
             GitHub.
           </a>
