@@ -32,7 +32,7 @@ export default function IndexPage() {
         </section>
         <section className="mb-20 featured-post">
           <div className="flex items-baseline justify-between">
-            <span className="text-xs text-gray-500 dark:text-gray-400 tracking-widest mb-4 mr-4 inline-block uppercase">
+            <span className="text-xs text-gray-600 dark:text-gray-400 tracking-widest mb-4 mr-4 inline-block uppercase">
               <span className="spacer">✨</span>Fresh post
             </span>
             <Link href="/blog">
