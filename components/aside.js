@@ -37,13 +37,13 @@ export default function Aside() {
       </ul>
       <dl className="w-48 text-sm text-gray-600 dark:text-gray-500">
         <dt>
-          <span className="text-xs text-gray-600 dark:text-gray-400 tracking-widest mb-4 mr-4 inline-block uppercase">
+          <span className="text-xs text-gray-600 dark:text-gray-400 tracking-widest mb-3 mr-4 inline-block uppercase">
             Currently
           </span>
         </dt>
         <dd className="dark:text-gray-400">Intuit Design System</dd>
         <dt>
-          <span className="text-xs text-gray-600 dark:text-gray-400 tracking-widest mb-4 mr-4 inline-block uppercase">
+          <span className="text-xs text-gray-600 dark:text-gray-400 tracking-widest mb-3 mr-4 inline-block uppercase">
             Location
           </span>
         </dt>
