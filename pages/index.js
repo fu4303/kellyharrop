@@ -32,15 +32,15 @@ export default function IndexPage() {
         </section>
         <section className="mb-20 featured-post">
           <div className="flex items-baseline justify-between">
-            <h4 className="mb-4 mr-4 inline-block">
-              <span className="text-lg spacer">✨</span>Fresh post
-            </h4>
+            <span className="text-xs text-gray-500 dark:text-gray-400 tracking-widest mb-4 mr-4 inline-block uppercase">
+              <span className="spacer">✨</span>Fresh post
+            </span>
             <Link href="/blog">
               <a className="text-sm">All posts</a>
             </Link>
           </div>
-          {posts.slice(0, 1).map(post => (
-            <div className="post">
+          {posts.slice(0, 1).map((post, i) => (
+            <div className="post" key={i}>
               <PostPreview key={post.link} post={post} />
             </div>
           ))}

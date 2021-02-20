@@ -7,7 +7,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import styles from '../styles/layout.module.css'
-import Prism from 'Prismjs'
 
 export const pageTitle = 'Kelly Harrop, UX Engineer'
 export const description = 'The personal site and blog of Kelly Harrop'
@@ -17,9 +16,6 @@ export const previewImage =
 export const twitterHandle = '@kellycodeschaos'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  useEffect(() => {
-    Prism.highlightAll()
-  }, [])
   const router = useRouter()
   const [isMounted, setIsMounted] = useState(false)
   const { theme, setTheme } = useTheme()
