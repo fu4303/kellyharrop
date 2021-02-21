@@ -130,7 +130,9 @@ dd {
 
 .post-preview {
   @apply hover:no-underline;
+}
 
+.post-preview {
   .description {
     @apply text-gray-500 dark:text-gray-400 mb-3;
   }
